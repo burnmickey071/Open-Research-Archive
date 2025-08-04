@@ -14,6 +14,11 @@ epoch = 3.1
 path = 'contracts/Research-Endorsement.clar'
 clarity_version = 3
 epoch = 3.1
+
+[contracts.Research-Collaboration]
+path = 'contracts/Research-Collaboration.clar'
+clarity_version = 3
+epoch = 3.1
 [repl.analysis]
 passes = ['check_checker']
 
