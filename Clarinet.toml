@@ -1,0 +1,43 @@
+[project]
+name = 'Open-Research-Archive'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Open-Research-Archive]
+path = 'contracts/Open-Research-Archive.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Research-Endorsement]
+path = 'contracts/Research-Endorsement.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Research-Collaboration]
+path = 'contracts/Research-Collaboration.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Research-Bounty]
+path = 'contracts/research-bounty.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.bounty-extension]
+path = 'contracts/bounty-extension.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
